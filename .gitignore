@@ -1,1 +1,5 @@
 __pycahce__
+venv
+*.pyc
+.git
+settings.py                        
