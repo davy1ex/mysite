@@ -1,0 +1,41 @@
+* {
+    color: #575757; 
+}
+
+
+
+/* header */
+header {
+    height: 70px;
+    /* background: #101112; */
+    background: black;
+}
+
+header a {
+    color: white; 
+}
+
+header .row {
+    line-height: 70px;
+    
+}
+
+header .col {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+header hr {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+/* header */
+
+
+
+body {
+    
+    /* background: #111627; */
+    background: white;
+
+}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block head %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/portfolio/index.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="preload">
+        <!-- <img src="{% static 'img/portfolio/loading.gif' %}"><br> -->
+        <p>Coming soon</p>
+    </div>
+    {% for p in projects %}
+        <div class="col">
+                {{ p.title }} <br>
+                {{ p.status }} <br>
+                {{ p.description }} 
+        </div>        
+    {% endfor %}
+{% endblock %}
