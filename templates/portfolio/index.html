@@ -6,15 +6,30 @@
 {% endblock %}
 
 {% block content %}
-    <div class="preload">
-        <!-- <img src="{% static 'img/portfolio/loading.gif' %}"><br> -->
-        <p>Coming soon</p>
+{% load static %}
+    <div class="projects_cell row">
+        {% for p in projects %}
+            <div class="project col">
+                <div class="title">
+                    {{ p.title }}
+                </div>
+                    
+                <div class="photo">
+                        <img src="{{ p.photo.url }}" alt="">
+                </div>
+
+                <div class="text_wrapper">
+                    <div class="status">
+                            {{ p.status }} 
+                    </div>
+                        
+                    <div class="description">
+                        {{ p.description }} 
+                    </div>
+                </div>
+                    
+            </div>        
+        {% endfor %}
     </div>
-    {% for p in projects %}
-        <div class="col">
-                {{ p.title }} <br>
-                {{ p.status }} <br>
-                {{ p.description }} 
-        </div>        
-    {% endfor %}
+    
 {% endblock %}
