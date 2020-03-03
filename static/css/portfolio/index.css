@@ -1,8 +1,18 @@
 
-.projects_cell  .col{
+.projects_cell  {
+    display: flex;
+    flex-wrap: wrap;
+    
+
     margin: 0 10px;
-    width: 30%!important;
+    /* width: 30%!important; */
     margin-top: 10px;
+}
+
+.project {
+    /* flex-basis: auto; */
+    flex: 1 1 auto;
+    padding: 10px;
 }
 
 .title {
@@ -22,8 +32,4 @@
 
 .project .photo img {    
     width: 100%;
-}
-
-.text_wrapper {
-    padding: 5px;
 }

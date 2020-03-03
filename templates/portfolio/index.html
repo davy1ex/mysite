@@ -7,29 +7,30 @@
 
 {% block content %}
 {% load static %}
-    <div class="projects_cell row">
-        {% for p in projects %}
-            <div class="project col">
-                <div class="title">
-                    {{ p.title }}
-                </div>
-                    
-                <div class="photo">
-                        <img src="{{ p.photo.url }}" alt="">
-                </div>
+<div class="projects_cell ">
+    {% for p in projects %}
 
-                <div class="text_wrapper">
-                    <div class="status">
-                            {{ p.status }} 
-                    </div>
-                        
-                    <div class="description">
-                        {{ p.description }} 
-                    </div>
+        <div class="project ">
+            <div class="title">
+                {{ p.title }}
+            </div>
+                
+            <div class="photo">
+                    <img src="{{ p.photo.url }}" alt="">
+            </div>
+
+            <div class="text_wrapper">
+                <div class="status">
+                        {{ p.status }} 
                 </div>
                     
-            </div>        
-        {% endfor %}
-    </div>
+                <div class="description">
+                    {{ p.description }} 
+                </div>
+            </div>
+                
+        </div>        
+    {% endfor %}
+</div>
     
 {% endblock %}
