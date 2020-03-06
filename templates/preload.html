@@ -11,20 +11,37 @@
             font: impact;
         }
         .preload {
-            text-align: center;            
+            
             font-size: 1.5em;
+        }
+
+        .preload img {
+            width: 100%;
+        }
+
+        .wrapper {
+            margin: auto;
+            max-width: 640px;
+        }
+
+        .text {
+            margin: auto;
+            text-align: center;     
         }
 
     </style>
 </head>
 <body>
     {% load static %}
-    <div class="preload">
-        <img src="{% static 'img/loading.gif' %}" alt="">
-        <div class="text">
-            Coming soon
+    <div class="wrapper">
+        <div class="preload">
+            <img src="{% static 'img/loading.gif' %}" alt="">
+            <div class="text">
+                Coming soon
+            </div>
         </div>
     </div>
+    
     
     
 </body>
