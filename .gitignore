@@ -8,3 +8,7 @@ run.sh
 db.sqlite3 
 portfolio/migrations/
 media
+
+mysite_nginx.conf
+test.py
+uwsgi_params
