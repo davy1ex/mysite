@@ -34,3 +34,10 @@ body {
     background: white;
 
 }
+
+
+.content {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}

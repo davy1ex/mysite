@@ -1,5 +1,14 @@
 from django.contrib import admin
-from .models import Project
+from .models import Project, DesktopImage
 
 
-admin.site.register(Project)
+class ProjectDesktopImageInline(admin.TabularInline):
+    model = DesktopImage
+    extra = 3
+
+
+class ProjectAdmin(admin.ModelAdmin):
+    inlines = [ProjectDesktopImageInline,]
+
+
+admin.site.register(Project, ProjectAdmin)

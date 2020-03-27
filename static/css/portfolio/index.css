@@ -1,7 +1,7 @@
 
 .projects_cell  {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
     
 
     margin: 0 10px;
@@ -10,26 +10,66 @@
 }
 
 .project {
-    /* flex-basis: auto; */
-    flex: 1 1 auto;
+    padding-top: 10px;
+    /* flex: 1 1 auto; */
     padding: 10px;
 }
 
-.title {
-    background: black;
-    border-radius: 10px 10px 0 0;
-    text-align: center;
-    color: white;
-    font-size: 1.2em;
-    line-height: 40px;
+.project:not(:last-child)  {
+    margin-bottom: 15px;
 }
 
-.project .photo {
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
+
+.last_commit {
+    padding-top: 5px;
+    color: #B8B8B8;
+}
+
+.title {
+    /* background: black;
+    border-radius: 10px 10px 0 0; */
+    font-size: 1.2em;
+    /* line-height: 40px; */
+}
+
+.title hr {
+    margin: 0;
+}
+
+.photo {
+    width: auto;
 }
 
 .project .photo img {    
+    width: 100%;
+}
+
+
+
+/*  */
+
+/* .slider {
+    width: 70%;
+} */
+
+/* .mobile.slider {
+    width: 30%;
+} */
+
+.slick-prev:before, .slick-next:before { 
+    color:black !important;
+    margin:0;
+    padding: -5px;
+    /* margin: auto !important;  */
+}
+
+.slick-slide {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: auto;
+}
+
+.slick-slide img {
     width: 100%;
 }
