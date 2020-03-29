@@ -1,4 +1,4 @@
-
+/* project */
 .projects_cell  {
     /* display: flex; */
     /* flex-wrap: wrap; */
@@ -9,6 +9,8 @@
     margin-top: 10px;
 }
 
+
+
 .project {
     padding-top: 10px;
     /* flex: 1 1 auto; */
@@ -16,7 +18,7 @@
 }
 
 .project:not(:last-child)  {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 
@@ -26,14 +28,15 @@
 }
 
 .title {
-    /* background: black;
-    border-radius: 10px 10px 0 0; */
     font-size: 1.2em;
-    /* line-height: 40px; */
 }
 
 .title hr {
     margin: 0;
+}
+
+a:hover > .title {
+    color: red;
 }
 
 .photo {
@@ -43,18 +46,6 @@
 .project .photo img {    
     width: 100%;
 }
-
-
-
-/*  */
-
-/* .slider {
-    width: 70%;
-} */
-
-/* .mobile.slider {
-    width: 30%;
-} */
 
 .slick-prev:before, .slick-next:before { 
     color:black !important;
