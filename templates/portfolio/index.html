@@ -26,7 +26,7 @@
 
     {% for p in projects %}
         <div class="project ">
-            <a href="">
+            <a href="{{ p.github_link }}">
                 <div class="photo">                
                     <div class="slider {{p.id}}">
                         {% for i in p.desktop_images.all %}
@@ -48,8 +48,7 @@
 
                 
 
-                <div class="text_wrapper">
-                    
+                <div class="text_wrapper">                   
 
                     <div class="status">
                             Status: {{ p.status }} 
