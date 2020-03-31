@@ -17,3 +17,7 @@ class Project(models.Model):
 class DesktopImage(models.Model):
     project = models.ForeignKey(Project, related_name="desktop_images", on_delete=models.CASCADE)
     image = models.ImageField()
+
+
+class Answer(models.Model):
+    text = models.CharField(max_length=1048576)

@@ -25,40 +25,41 @@
         
 
     {% for p in projects %}
-        <div class="project ">           
-            <div class="photo">                
-                <div class="slider {{p.id}}">
-                    {% for i in p.desktop_images.all %}
-                        <div class="div">
-                            <img src="{{ i.image.url }}" alt="">
-                        </div>
-                    {% endfor %}
-                </div>                    
-            </div>
+        <div class="project ">
+            <a href="">
+                <div class="photo">                
+                    <div class="slider {{p.id}}">
+                        {% for i in p.desktop_images.all %}
+                            <div class="div">
+                                <img src="{{ i.image.url }}" alt="">
+                            </div>
+                        {% endfor %}
+                    </div>                    
+                </div>
 
-            <div class="last_commit">
-                Last commit: 
-            </div>
-            
-            <div class="title">
-                {{ p.title }}
-                <hr>
-            </div>
+                <div class="last_commit">
+                    Last commit: 
+                </div>
+                
+                <div class="title">
+                    {{ p.title }}
+                    <hr>
+                </div>
 
-            
-
-            <div class="text_wrapper">
                 
 
-                <div class="status">
-                        Status: {{ p.status }} 
-                </div>
+                <div class="text_wrapper">
                     
-                <div class="description">
-                    {{ p.description }} 
+
+                    <div class="status">
+                            Status: {{ p.status }} 
+                    </div>
+                        
+                    <div class="description">
+                        {{ p.description }} 
+                    </div>
                 </div>
-            </div>
-                
+            </a>           
         </div>        
     {% endfor %}
 </div>

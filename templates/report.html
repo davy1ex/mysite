@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    
+    <link rel="stylesheet" href="{% static 'css/crypt.css' %}">
+    <script src="{% static 'js/report.js' %}"></script>
+</head>
+<body>
+    <div class="wrapper_content">
+        <div class="formblock">
+            <div class="title">
+                Сюда можно написать всё, что угодно:
+            </div>
+            
+            <form action="" method="POST">
+                {% csrf_token %}
+                <!-- <textarea name="" id="" cols="30" rows="10"></textarea>
+                <input type="submit" onclick="send()"> -->
+                {{ form }}
+                <input type="submit" onclick="send()">
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>

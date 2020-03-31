@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Project, DesktopImage
+from .models import Project, DesktopImage, Answer
 
 
 class ProjectDesktopImageInline(admin.TabularInline):
@@ -12,3 +12,4 @@ class ProjectAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Project, ProjectAdmin)
+admin.site.register(Answer)
