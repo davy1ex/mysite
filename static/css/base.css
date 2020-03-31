@@ -2,18 +2,21 @@
     color: #575757; 
     margin: 0;
     padding: 0;
+    
 }
 
 
-
 a:hover, a:visited {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
 .col, .row {
     margin: 0px;
 }
+
+
+
 
 /* header */
 header {
@@ -39,7 +42,10 @@ header .col {
 
 body {
     background: white;
+}
 
+html, body {
+    height: 100%;
 }
 
 
@@ -49,10 +55,10 @@ body {
         margin: auto;
     }
   }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
     .content {
         width: 80%;
         margin: auto;
-        padding: 20px;
+        /* margin-top: 20px; */
     }
 }

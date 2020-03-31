@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block head %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/portfolio/whoami.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container_whoami">
+    <div class="wrapper_whoami">
+        <div class="whoami">
+            <div class="avatar">
+                <img src="{% static 'img/portfolio/cool.jpg' %}" alt="">
+            </div>
+            
+            <div class="name">
+                Davydov Alexey
+            </div>
+            
+            <div class="skill">
+                WEB Developer
+            </div>
+
+            <div class="socials">
+                <div class="vk">
+                    <a href="https://vk.com/richlex"><img src="{% static 'img/portfolio/icons/vk.png' %}" alt=""></a>
+                </div>
+
+                <div class="github">
+                    <a href="https://github.com/davy1ex"><img src="{% static 'img/portfolio/icons/github.png' %}" alt=""></a>    
+                </div>                
+            </div>
+        </div>
+    </div>
+    
+    
+</div>
+{% endblock %}

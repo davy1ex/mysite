@@ -1,0 +1,76 @@
+@media only screen and (max-width: 600px) {
+    .wrapper_whoami {
+        
+        width: 90%;
+        height: auto;
+        background: #4d4cc4;
+        margin: auto;
+        border: 1px solid red;
+    }
+
+    .container_whoami{
+        padding-top: 10px;
+    }
+  }
+@media only screen and (min-width: 600px) {
+    .wrapper_whoami {
+        /* width: 90%; */
+        /* height: auto; */
+        background: #4d4cc4;
+        margin: auto;
+        border: 1px solid red;
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 92vh;
+}
+
+/* .container_whoami {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 50%;
+} */
+
+
+.whoami {
+    width: 90%;
+    padding: 50px;
+    margin: auto;
+}
+
+.avatar {
+    width: auto;
+    margin: auto;
+}
+
+.avatar img {
+    width: 100%;
+    
+    border-radius: 100%;
+}
+
+.name, .skill {
+    color: white;
+    text-align: center;
+}
+
+.name {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.socials{
+    display: flex;
+    justify-content: center;;
+}
+.vk img, .github img {
+    height: 50px;
+    padding:  0 50px;
+    margin-top: 20px;
+}
+
