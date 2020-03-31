@@ -9,7 +9,7 @@ import portfolio.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('', portfolio.views.preload),
+    path('', portfolio.views.redirect_to_index),
     path('portfolio/', portfolio.views.index),
     path('whoami/', portfolio.views.whoami),
 ]
