@@ -1,0 +1,26 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Welcome</title>
+    {% load static %}
+    <!-- <link id="shut-up-css" rel="stylesheet" href="{% static 'img/screen1' %}"> -->
+</head>
+<body cz-shortcut-listen="true">
+  <script>
+    alert("Велкаме на шифроквест")
+  </script>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/welcome.css' %}">
+  <center>
+    <font face="Arial"><img src="{% static 'img/screen1.jpg' %}" width="640" height="480" border="0" usemap="#no"></font>
+  </center>
+  <font face="Arial"> 
+    <map name="no">
+      <area shape="poly" coords="312,121,387,93,387,402,311,397" href="/level2">
+    </map>
+  </font>
+  <div align="center">
+    <p><font face="Arial"><br></font></p>
+  </div>
+  <!-- Что ты тут ищешь, сыщик? -->
+</body>
+</html>

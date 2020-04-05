@@ -17,3 +17,12 @@ def index(request):
 
 def whoami(request):
     return render(request, "portfolio/whoami.html")
+
+
+
+def welcome(request):
+    return render(request, "quest/welcome.html")
+
+
+def leveltwo(request):
+    return render(request, "quest/leveltwo.html")

@@ -12,6 +12,8 @@ urlpatterns = [
     path('', portfolio.views.redirect_to_index),
     path('portfolio/', portfolio.views.index),
     path('whoami/', portfolio.views.whoami),
+    path('welcome/', portfolio.views.welcome),
+    path('level2/', portfolio.views.leveltwo),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
