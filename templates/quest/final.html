@@ -8,14 +8,15 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="/final">
-        <div class="screen2">
-            <img src="{% static 'img/screen2.jpg' %}" alt="">
-        </div>    
-    </a>
-
-    <script>
-        console.log("Нет, не меня. Попробуй ещё")
-    </script>
+    <div class="formfield">
+        <div class="textspan">
+            Авторизация
+        </div>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 </body>
 </html>

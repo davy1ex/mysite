@@ -14,3 +14,35 @@ a:active	{	color: #FFFFFF		}
 .screen2 {
 	text-align: center;
 }
+
+
+.formfield {
+	width: 50%;
+	margin: auto;
+	margin-top: 20%;
+	border-radius: 10px;
+	padding: 10px;
+	background: #8a8b8a;
+}
+
+.textspan {
+	color: #e6e6e6;
+}
+
+form {
+	background: #e6e6e6;
+	padding: 5px;
+}
+
+form input[type=text] {
+	width: 98%;
+	margin: auto;
+}
+
+input[type=submit] {
+	margin-bottom: 10px;
+}
+
+.wrapper_thank {
+	text-align: center;
+}
